@@ -20,7 +20,7 @@ Bienvenue sur **LVLUP**, une application web dédiée à l’univers du jeu vid�
 
 - **Flux d’actualités** : Intégration des RSS de Jeuxvideo.com.
 - **Sorties de jeux à venir** : Requête dynamique via l’API [RAWG.io](https://rawg.io/apidocs).
-- **Page Résumés** : Présentation synthétique d’un jeu avec date de sortie, plateforme, note Metacritic, description, etc... via l’API [RAWG.io](https://rawg.io/apidocs).
+- **Page Résumés** : Présentation d’un jeu avec date de sortie, plateforme, note Metacritic, etc... via l’API [RAWG.io](https://rawg.io/apidocs).
 - **Recherche intelligente** : Accès rapide aux articles ou jeux via mot-clé.
 - **Design responsive** : UI claire, moderne avec DarkMode disponible.
 - **Pages informatives** :
