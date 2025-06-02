@@ -1,4 +1,4 @@
-const API_KEY = "3b8782673ff44dca9f32bda4a3ce6d0b";
+const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
 const BASE_URL = "https://api.rawg.io/api";
 
 export const searchGames = async (query) => {
@@ -27,7 +27,7 @@ export async function getUpcomingGames() {
   nextMonth.setMonth(nextMonth.getMonth() + 10);
   const endDate = nextMonth.toISOString().split('T')[0];
 
-  const url = `https://api.rawg.io/api/games?key=3b8782673ff44dca9f32bda4a3ce6d0b&dates=${today},${endDate}&ordering=released&page_size=20`;
+  const url = `https://api.rawg.io/api/games?key=${API_KEY}&dates=${today},${endDate}&ordering=released&page_size=20`;
 
   try {
     const response = await fetch(url);
