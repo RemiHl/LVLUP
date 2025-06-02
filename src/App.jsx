@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/layout/Layout';
 import HomePage from './components/page/HomePage';
 import SearchPage from './components/page/SearchPage';
@@ -30,6 +31,7 @@ function App() {
                 <Route path="/faq" element={<FAQPage />} />
               </Route>
             </Routes>
+            <Analytics />
           </BrowserRouter>
         </SearchProvider>
       </AuthProvider>
