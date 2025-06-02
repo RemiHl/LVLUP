@@ -1,0 +1,36 @@
+.home {
+  width: 100%;
+}
+
+.hero-wrapper {
+  width: 100%;
+}
+
+.news-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .news-section {
+    padding: 0 2rem;
+  }
+}
+
+.section-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+.section-description {
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}

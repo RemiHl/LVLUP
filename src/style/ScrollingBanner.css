@@ -1,0 +1,37 @@
+.scrolling-banner {
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f2937;
+  color: #fff;
+  padding: 0.4rem 0;
+  border-top: 2px solid #60a5fab1;
+  border-bottom: 2px solid #60a5fac0;
+}
+
+.scrolling-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.scrolling-content a {
+  display: inline-block;
+  margin: 0 3rem;
+  color: #60a5fa;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.scrolling-content a:hover {
+  color: #93c5fd;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
