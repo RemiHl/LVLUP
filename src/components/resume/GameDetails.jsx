@@ -1,12 +1,16 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getGameDetails, getGameScreenshots } from "../services/GameService";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 import "../../style/GameDetails.css";
 
 const GameDetails = () => {
   const { id } = useParams();
   const [game, setGame] = useState(null);
   const [screenshots, setScreenshots] = useState([]);
+  const [open, setOpen] = useState(false);
+  const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const fetchDetails = async () => {
@@ -26,9 +30,9 @@ const GameDetails = () => {
   if (!game) return <p>Chargement des infos du jeu...</p>;
 
   const formatDate = (dateString) => {
-  const options = { day: "2-digit", month: "2-digit", year: "numeric" };
-  return new Date(dateString).toLocaleDateString("fr-FR", options);
-};
+    const options = { day: "2-digit", month: "2-digit", year: "numeric" };
+    return new Date(dateString).toLocaleDateString("fr-FR", options);
+  };
 
   return (
     <div className="game-details">
@@ -48,10 +52,26 @@ const GameDetails = () => {
 
       <h2>Screenshots</h2>
       <div className="screenshot-grid">
-        {screenshots.map((shot) => (
-          <img key={shot.id} src={shot.image} alt="Screenshot" />
+        {screenshots.map((shot, idx) => (
+          <img
+            key={shot.id}
+            src={shot.image}
+            alt="Screenshot"
+            onClick={() => {
+              setIndex(idx);
+              setOpen(true);
+            }}
+            style={{ cursor: 'pointer' }}
+          />
         ))}
       </div>
+
+      <Lightbox
+        open={open}
+        close={() => setOpen(false)}
+        index={index}
+        slides={screenshots.map(shot => ({ src: shot.image }))}
+      />
     </div>
   );
 };
