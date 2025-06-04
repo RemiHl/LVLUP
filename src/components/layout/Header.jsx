@@ -31,6 +31,7 @@ const Header = ({ isScrolled }) => {
         <div className="nav-links">
           <Link to="/">Accueil</Link>
           <Link to="/resume">Résumés</Link>
+          <Link to="/lvlup-news">LVLUP News</Link>
           <Link to="/releases">Sorties à venir</Link>
         </div>
 
@@ -69,6 +70,7 @@ const Header = ({ isScrolled }) => {
             <div className="mobile-links">
               <Link to="/" onClick={() => setMobileMenuOpen(false)}>Accueil</Link>
               <Link to="/resume" onClick={() => setMobileMenuOpen(false)}>Résumés</Link>
+              <Link to="/lvlup-news" onClick={() => setMobileMenuOpen(false)}>LVLUP News</Link>
               <Link to="/releases" onClick={() => setMobileMenuOpen(false)}>Sorties à venir</Link>
             </div>
 

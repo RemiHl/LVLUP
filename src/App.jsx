@@ -12,6 +12,11 @@ import ReleasesPage from './components/page/ReleasesPage';
 import AboutPage from './components/page/AboutPage';
 import ContactPage from './components/page/ContactPage';
 import FAQPage from './components/page/FAQPage';
+import LvlupNewsPage from './components/page/LvlupNewsPage';
+import AdminPage from './components/page/AdminPage';
+import AdminLogin from './components/layout/AdminLogin';
+import NewsArticlePage from './components/page/NewsArticlePage';
+import AdminLoginGuard from './components/layout/AdminLoginGuard';
 
 function App() {
   return (
@@ -26,9 +31,17 @@ function App() {
                 <Route path="resume" element={<ResumePage />} />
                 <Route path="/resume/:id" element={<GameDetails />} />
                 <Route path="/releases" element={<ReleasesPage />} />
+                <Route path="/lvlup-news" element={<LvlupNewsPage />} />
+                <Route path="/news/:id" element={<NewsArticlePage />} />
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/faq" element={<FAQPage />} />
+                <Route path="/admin" element={<AdminPage />} />
+                <Route path="/admin-login" element={
+                  <AdminLoginGuard>
+                    <AdminLogin />
+                  </AdminLoginGuard>
+                } />
               </Route>
             </Routes>
             <Analytics />

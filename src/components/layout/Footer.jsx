@@ -31,6 +31,7 @@ const Footer = () => {
           <ul>
             <li><Link to="/">Accueil</Link></li>
             <li><Link to="/resume">Résumés</Link></li>
+            <li><Link to="/lvlup-news">LVLUP News</Link></li>
             <li><Link to="/releases">Sorties à venir</Link></li>
           </ul>
         </div>
