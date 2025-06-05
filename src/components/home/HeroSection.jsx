@@ -14,7 +14,7 @@ const heroSlides = [
   {
     title: "La Nintendo Switch 2 est sortie !",
     subtitle: "La nouvelle console de Nintendo est sortie, et avec elle son nouveau jeu phare : Mario Kart World !",
-    backgroundImage: "https://www.ecranlarge.com/content/uploads/2025/04/on-a-teste-la-switch-2-et-mario-kart-world-que-vaut-la-nouvelle-console-de-nintendo-.jpg",
+    backgroundImage: "https://images.nordbayern.de/image/contentid/policy:1.14609480:1741881222/Switch_2.jpg?f=16%3A9&h=816&m=FIT&w=1680&$p$f$h$m$w=7d0f03c",
     link: "https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch-2/Mario-Kart-World-2790000.html?srsltid=AfmBOooTvcSPQb-DJvbOtZbWc4au8UVbdeRAhnOBkqHeIuP_nGhP82mK"
   },
   {
