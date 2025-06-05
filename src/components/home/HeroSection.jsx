@@ -6,6 +6,12 @@ import '../../style/HeroSection.css';
 
 const heroSlides = [
   {
+    title: "LVLUP News !",
+    subtitle: "LVLUP publie maintenant ses propres articles sur l'actualité gaming !",
+    backgroundImage: "https://static3.cegos.fr/content/uploads/2022/03/09150019/Rediger-un-rapport-Mag.jpg",
+    link: "/lvlup-news"
+  },
+  {
     title: "Découvrez les dernières news du jeu vidéo",
     subtitle: "Restez informé sur les dernières tendances, sorties et événements du monde du jeu vidéo.",
     backgroundImage: "https://ipfs-api.bakiverse.com/file/display?cid=QmZaQnEVjJxVyfriRcrWHWAr5umiMEwSD2jHuXTaqSFfae",
