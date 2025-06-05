@@ -12,13 +12,19 @@ const heroSlides = [
     link: "/lvlup-news"
   },
   {
+    title: "La Nintendo Switch 2 est sortie !",
+    subtitle: "La nouvelle console de Nintendo est sortie, et avec elle son nouveau jeu phare : Mario Kart World !",
+    backgroundImage: "https://www.ecranlarge.com/content/uploads/2025/04/on-a-teste-la-switch-2-et-mario-kart-world-que-vaut-la-nouvelle-console-de-nintendo-.jpg",
+    link: "https://www.nintendo.com/fr-fr/Jeux/Jeux-Nintendo-Switch-2/Mario-Kart-World-2790000.html?srsltid=AfmBOooTvcSPQb-DJvbOtZbWc4au8UVbdeRAhnOBkqHeIuP_nGhP82mK"
+  },
+  {
     title: "Découvrez les dernières news du jeu vidéo",
     subtitle: "Restez informé sur les dernières tendances, sorties et événements du monde du jeu vidéo.",
     backgroundImage: "https://ipfs-api.bakiverse.com/file/display?cid=QmZaQnEVjJxVyfriRcrWHWAr5umiMEwSD2jHuXTaqSFfae",
     link: "/search?platform=all"
   },
   {
-    title: "LVLUP Résumés !",
+    title: "Un Résumé ?",
     subtitle: "Recherchez toutes les informations à propos de vos jeux préférés !",
     backgroundImage: "https://ipfs-api.bakiverse.com/file/display?cid=QmfUVpDxQwNgWkpnwmi8CbzqGWZCcwcSTcbDstEYqWRBi4",
     link: "/resume"
