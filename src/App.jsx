@@ -17,6 +17,8 @@ import AdminPage from './components/page/AdminPage';
 import AdminLogin from './components/layout/AdminLogin';
 import NewsArticlePage from './components/page/NewsArticlePage';
 import AdminLoginGuard from './components/layout/AdminLoginGuard';
+import PrivacyPolicyPage from './components/page/PrivacyPolicyPage';
+import TermsOfServicePage from './components/page/TermsOfServicePage';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/faq" element={<FAQPage />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+                <Route path="/terms" element={<TermsOfServicePage />} />
                 <Route path="/admin" element={<AdminPage />} />
                 <Route path="/admin-login" element={
                   <AdminLoginGuard>
