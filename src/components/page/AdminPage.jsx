@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../../style/AdminPage.css';
 import { useNavigate } from 'react-router-dom';
+import RichTextEditor from '../layout/RichTextEditor';
 
 const AdminPage = () => {
   const navigate = useNavigate();
@@ -98,7 +99,12 @@ const AdminPage = () => {
 
       <form className="article-form" onSubmit={handleSubmit}>
         <input type="text" name="title" placeholder="Titre" value={formData.title} onChange={handleChange} required />
-        <textarea name="content" placeholder="Contenu" value={formData.content} onChange={handleChange} required />
+        <RichTextEditor
+          content={formData.content}
+          onChange={(html) =>
+            setFormData((prev) => ({ ...prev, content: html }))
+          }
+        />
         <input type="text" name="imageUrl" placeholder="URL de l'image" value={formData.imageUrl} onChange={handleChange} />
         <input type="text" name="redirectUrl" placeholder="Lien de redirection" value={formData.redirectUrl} onChange={handleChange} />
         <button type="submit">Créer l'article</button>

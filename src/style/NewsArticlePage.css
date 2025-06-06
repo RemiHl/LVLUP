@@ -24,15 +24,15 @@
 }
 
 .article-content {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.1rem;
+  line-height: 1.6;
   margin-bottom: 2rem;
   white-space: pre-wrap;
 }
 
 .redirect-button {
   display: inline-block;
-  background-color: #ff4c4c;
+  background-color: #6249c9;
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -42,5 +42,6 @@
 }
 
 .redirect-button:hover {
-  background-color: #e53838;
+  background-color: #331a99;
+  color: white;
 }

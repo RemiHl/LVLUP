@@ -24,10 +24,20 @@ const NewsArticlePage = () => {
   return (
     <div className="news-article-page">
       <h1>{article.title}</h1>
-      {article.imageUrl && <img src={article.imageUrl} alt={article.title} />}
-      <p>{article.content}</p>
+      {article.imageUrl && <img src={article.imageUrl} alt={article.title} className="article-image" />}
+      
+      <div
+        className="article-content"
+        dangerouslySetInnerHTML={{ __html: article.content }}
+      />
+
       {article.redirectUrl && (
-        <a href={article.redirectUrl} target="_blank" rel="noopener noreferrer">
+        <a
+          href={article.redirectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="redirect-button"
+        >
           Pour plus d'infos, cliquez ici
         </a>
       )}

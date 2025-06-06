@@ -33,7 +33,10 @@ const LvlupNewsPage = () => {
               />
             )}
             <h2 className="lvlup-news-card-title">{article.title}</h2>
-            <p className="lvlup-news-card-content">{article.content.slice(0, 100)}...</p>
+            <div
+              className="lvlup-news-card-content"
+              dangerouslySetInnerHTML={{ __html: `${article.content.slice(0, 150)}...` }}
+            ></div>
             <Link
               to={`/news/${article._id}`}
               className="lvlup-news-card-link"
