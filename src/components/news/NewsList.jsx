@@ -15,7 +15,7 @@ const NewsList = () => {
       setLoading(true);
       const articles = await fetchNews(selectedPlatform);
       setNews(articles);
-      setVisibleCount(9);
+      setVisibleCount(6);
       setLoading(false);
     };
 

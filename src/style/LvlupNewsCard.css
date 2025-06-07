@@ -1,0 +1,50 @@
+.lvlup-news-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.lvlup-news-card:hover {
+  transform: scale(1.03);
+}
+
+.lvlup-news-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.lvlup-news-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.lvlup-news-content .lvlup-news-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.lvlup-news-snippet {
+  font-size: 0.9rem;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.lvlup-news-link {
+  align-self: flex-start;
+  color: #6b0cd0;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.lvlup-news-link:hover {
+  color: #5c0cb0;
+}

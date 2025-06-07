@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import HeroSection from '../home/HeroSection';
 import NewsList from '../../components/news/NewsList';
+import LvlupLatestNews from '../../components/news/LvlupLatestNews';
 import Trailer from '../../components/layout/Trailer';
 import '../../style/HomePage.css';
 
@@ -29,6 +30,12 @@ const HomePage = () => {
         <HeroSection />
       </div>
 
+      {/* ✅ Nouvelle section Actualité LVLUP */}
+      <section className="lvlup-latest-news-section">
+        <LvlupLatestNews />
+      </section>
+
+      {/* 📰 News JV.com + trailer */}
       <section className="news-section">
         <NewsList />
         <Trailer videoId="u5rWBgBjDsc" />
