@@ -19,6 +19,7 @@ import NewsArticlePage from './components/page/NewsArticlePage';
 import AdminLoginGuard from './components/layout/AdminLoginGuard';
 import PrivacyPolicyPage from './components/page/PrivacyPolicyPage';
 import TermsOfServicePage from './components/page/TermsOfServicePage';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <AuthProvider>
         <SearchProvider>
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route index element={<HomePage />} />
