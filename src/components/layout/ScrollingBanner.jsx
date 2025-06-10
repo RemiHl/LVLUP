@@ -3,6 +3,7 @@ import '../../style/ScrollingBanner.css';
 const ScrollingBanner = () => {
   const links = [
     { text: '🔥 Epic vous offre DEATHLOOP et Ogu and the Secret Forest !', url: 'https://store.epicgames.com/fr/free-games' },
+    { text: '🔥 Suivez LVLUP sur 𝕏 ici !', url: 'https://x.com/LvlupEight' },
     { text: 'LVLUP publie maintenant ses propres articles !', url: 'https://lvlup-eight.vercel.app/lvlup-news' },
     { text: '🎮 Nouveaux jeux PS Plus disponibles !', url: 'https://www.playstation.com/fr-fr/ps-plus/games/' },
     { text: '🕹️ Joue à tes jeux préferés avec le Xbox Game Pass !', url: 'https://www.xbox.com/fr-FR/xbox-game-pass' },

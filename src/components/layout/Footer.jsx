@@ -23,6 +23,9 @@ const Footer = () => {
             <a href="https://github.com/RemiHl" target="_blank" aria-label="GitHub" rel="noreferrer">
               <FiGithub />
             </a>
+            <a href='https://x.com/LvlupEight' target="_blank" aria-label="GitHub" rel="noreferrer">
+              <FiTwitter />
+            </a>
           </div>
         </div>
 
