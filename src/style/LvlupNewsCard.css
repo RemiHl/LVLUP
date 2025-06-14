@@ -48,3 +48,14 @@
 .lvlup-news-link:hover {
   color: #5c0cb0;
 }
+
+.lvlup-news-card.small-card {
+  padding: 10px;
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+.lvlup-news-image.small-image {
+  height: 140px;
+  object-fit: cover;
+}

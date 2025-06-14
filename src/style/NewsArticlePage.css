@@ -45,3 +45,20 @@
   background-color: #331a99;
   color: white;
 }
+
+.read-more-section {
+  margin-top: 60px;
+}
+
+.read-more-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid;
+  padding-bottom: 0.5rem;
+}
+
+.read-more-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+}

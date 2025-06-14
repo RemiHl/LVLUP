@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import '../../style/LvlupNewsCard.css';
 
-const LvlupNewsCard = ({ article }) => {
+const LvlupNewsCard = ({ article, small }) => {
   return (
-    <div className="lvlup-news-card">
+    <div className={`lvlup-news-card ${small ? 'small-card' : ''}`}>
       {article.imageUrl && (
         <img
           src={article.imageUrl}
           alt={article.title}
-          className="lvlup-news-image"
+          className={`lvlup-news-image ${small ? 'small-image' : ''}`}
         />
       )}
       <div className="lvlup-news-content">
